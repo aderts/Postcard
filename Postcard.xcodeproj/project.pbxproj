@@ -13,6 +13,8 @@
 		6446088F1B2661E90065CBDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6446088E1B2661E90065CBDB /* Images.xcassets */; };
 		644608921B2661E90065CBDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 644608901B2661E90065CBDB /* LaunchScreen.xib */; };
 		6446089E1B2661EA0065CBDB /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446089D1B2661EA0065CBDB /* PostcardTests.swift */; };
+		64C1DFCF1B26F3F400394DC7 /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 64C1DFCE1B26F3F400394DC7 /* SagradaFamilia.jpeg */; };
+		64C1DFD11B26F86F00394DC7 /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64C1DFD01B26F86F00394DC7 /* AlbertEinsteinStamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		644608971B2661EA0065CBDB /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6446089C1B2661EA0065CBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6446089D1B2661EA0065CBDB /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		64C1DFCE1B26F3F400394DC7 /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
+		64C1DFD01B26F86F00394DC7 /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		644608851B2661E90065CBDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				64C1DFCE1B26F3F400394DC7 /* SagradaFamilia.jpeg */,
+				64C1DFD01B26F86F00394DC7 /* AlbertEinsteinStamp.jpg */,
 				644608861B2661E90065CBDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					644608811B2661E90065CBDB = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KNVPWN53Z7;
 					};
 					644608961B2661EA0065CBDB = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -193,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6446088D1B2661E90065CBDB /* Main.storyboard in Resources */,
+				64C1DFCF1B26F3F400394DC7 /* SagradaFamilia.jpeg in Resources */,
+				64C1DFD11B26F86F00394DC7 /* AlbertEinsteinStamp.jpg in Resources */,
 				644608921B2661E90065CBDB /* LaunchScreen.xib in Resources */,
 				6446088F1B2661E90065CBDB /* Images.xcassets in Resources */,
 			);
@@ -342,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +426,7 @@
 				644608A31B2661EA0065CBDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		644608A41B2661EA0065CBDB /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +435,7 @@
 				644608A61B2661EA0065CBDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
